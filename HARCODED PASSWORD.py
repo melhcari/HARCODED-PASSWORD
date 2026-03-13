@@ -1,13 +1,9 @@
-rules:
-- id: hardcoded-password
-  patterns:
-    - pattern: $VAR = "..."
-    - metavariable-regex:
-        metavariable: $VAR
-        regex: (?i)(password|passwd|pwd|secret|token|api_key)
-  message: Hardcoded credential detected
-  languages: [python]
-  severity: WARNING
+db_password = "admin123"
+
+def login():
+    print("Connecting with password:", db_password)
+
+login()
 
 
 
