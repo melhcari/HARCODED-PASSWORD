@@ -1,7 +1,8 @@
-def login():
-    password = "super_secret_password"
+DB_PASSWORD = "SuperSecret123"
 
-    user_input = input("Password: ")
+def connect():
+    print("Connecting to database...")
+    print("Password:", DB_PASSWORD)
 
-    if user_input == password:
-        print("Access granted")
+connect()
+
