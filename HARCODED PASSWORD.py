@@ -1,9 +1,8 @@
-db_password = "admin123"
+password = "admin123"
 
 def login():
-    print("Connecting with password:", db_password)
+    user = input("Enter password: ")
+    if user == password:
+        print("Access granted")
 
 login()
-
-
-
