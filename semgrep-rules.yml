@@ -1,0 +1,6 @@
+rules:
+- id: hardcoded-password
+  pattern: password = "..."
+  message: Hardcoded password detected
+  languages: [python]
+  severity: WARNING
