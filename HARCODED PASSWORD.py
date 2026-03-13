@@ -1,8 +1,7 @@
-password_correcta = "admin123"
+def login():
+    password = "super_secret_password"
 
-password = input("Ingresa la contraseña: ")
+    user_input = input("Password: ")
 
-if password == password_correcta:
-    print("Acceso concedido")
-else:
-    print("Acceso denegado")
+    if user_input == password:
+        print("Access granted")
